@@ -114,7 +114,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return __jsx(Navbar, {
-      className: "flex items-center justify-between flex-wrap p-0 h-20",
+      className: "flex items-center justify-between content-center flex-wrap p-0 h-20",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 7
@@ -147,10 +147,162 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
 }
-const Navbar = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
+const Navbar = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     background-color: #041D2D !important;
     color: #fff;
+    position: relative;
 `;
+
+/***/ }),
+
+/***/ "./pages/components/Particle.js":
+/*!**************************************!*\
+  !*** ./pages/components/Particle.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ "react-particles-js");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/hyungsukkang/website/pages/components/Particle.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+/* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
+  style: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -1
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  params: {
+    particles: {
+      number: {
+        value: 100,
+        density: {
+          enable: true,
+          value_area: 1803.4120608655228
+        }
+      },
+      color: {
+        value: "#ffffff"
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 2,
+          color: "#000000"
+        },
+        polygon: {
+          nb_sides: 4
+        },
+        image: {
+          src: "img/github.svg",
+          width: 100,
+          height: 100
+        }
+      },
+      opacity: {
+        value: 0.4008530152163807,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 1.5,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#041D2D",
+        opacity: 0.3687847739990702,
+        width: 0.6413648243462091
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200
+        }
+      }
+    },
+    interactivity: {
+      detect_on: "window",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse"
+        },
+        onclick: {
+          enable: false,
+          mode: "bubble"
+        },
+        resize: true
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 1
+          }
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3
+        },
+        repulse: {
+          distance: 100,
+          duration: 0.4
+        },
+        push: {
+          particles_nb: 4
+        },
+        remove: {
+          particles_nb: 2
+        }
+      }
+    },
+    retina_detect: true
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+})));
 
 /***/ }),
 
@@ -214,58 +366,32 @@ const CustomForm = ({
 
   return __jsx("div", {
     style: {
-      background: "#efefef",
-      borderRadius: 2,
+      background: "#808080",
+      marginLeft: "10%",
+      borderRadius: 10,
+      width: "80%",
       padding: 10,
-      display: "inline-block"
+      display: "inline-block",
+      textAlign: "center"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: undefined
-  }, status === "sending" && __jsx("div", {
+  }, __jsx("h3", {
     style: {
-      color: "blue"
+      color: "#fff"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: undefined
-  }, "sending..."), status === "error" && __jsx("div", {
+  }, "Get InterstateOne alpha testnet updates"), __jsx("input", {
     style: {
-      color: "red"
-    },
-    dangerouslySetInnerHTML: {
-      __html: message
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
-  }), status === "success" && __jsx("div", {
-    style: {
-      color: "green"
-    },
-    dangerouslySetInnerHTML: {
-      __html: message
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: undefined
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: undefined
-  }), __jsx("input", {
-    style: {
-      fontSize: "2em",
+      width: "70%",
+      fontSize: "12px",
       padding: 5
     },
     ref: node => email = node,
@@ -273,69 +399,26 @@ const CustomForm = ({
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: undefined
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 40
     },
     __self: undefined
   }), __jsx("button", {
     style: {
-      fontSize: "2em",
+      padding: 5,
+      color: "#fff",
+      width: "56px",
+      backgroundColor: "#041D2D",
+      fontSize: "14px",
       padding: 5
     },
     onClick: submit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 46
     },
     __self: undefined
   }, "Submit"));
 };
-
-/***/ }),
-
-/***/ "./pages/components/layout.js":
-/*!************************************!*\
-  !*** ./pages/components/layout.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Layout; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_analytics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/analytics */ "./pages/utils/analytics.js");
-var _jsxFileName = "/Users/hyungsukkang/website/pages/components/layout.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  componentDidMount() {
-    if (!window.GA_INITIALIZED) {
-      Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_1__["initGA"])();
-      window.GA_INITIALIZED = true;
-    }
-
-    Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_1__["logPageView"])();
-  }
-
-  render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, this.props.children);
-  }
-
-}
 
 /***/ }),
 
@@ -353,10 +436,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Subscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Subscriber */ "./pages/components/Subscriber.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/layout */ "./pages/components/layout.js");
-/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Navbar */ "./pages/components/Navbar.js");
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Navbar */ "./pages/components/Navbar.js");
+/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
+/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Particle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Particle */ "./pages/components/Particle.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next-ga */ "next-ga");
+/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_ga__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/Users/hyungsukkang/website/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -366,164 +453,217 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const index = () => __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), __jsx("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain solution designed to scale Ethereum without compromising on security or computational complexity."), __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx("ul", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, "Seamlessly integrate"), __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, "Verifiable on mainnet"))), __jsx("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, "Team"), __jsx("h3", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, "Ray Pulver"), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, "founding CTO of IDEX, a top 5 decentralized exchange"), __jsx("h3", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}, "Dillon Kellar"), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
-}, "finalist of EthNewYork and creator of exeDAO"), __jsx("h3", {
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    }
+  }
+};
+
+const index = () => __jsx("div", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 23
   },
   __self: undefined
-}, "Andy Zhu"), __jsx("p", {
+}, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 24
   },
   __self: undefined
-}, "former head of marketing and product manager at ninjaRMM"), __jsx("h3", {
+}), __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 25
   },
   __self: undefined
-}, "Nick Geoca"), __jsx("p", {
+}), __jsx(Content, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 26
   },
   __self: undefined
-}, "10 years of experience as full-stack developer, multiple startups"), __jsx("h4", {
+}, __jsx(Header, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 28
   },
   __self: undefined
-}, "Links"), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}, "Developer Friendly."), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29
+  },
+  __self: undefined
+}, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 30
   },
   __self: undefined
+}, "Fully Verifiable."), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 31
+  },
+  __self: undefined
+}, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("h1", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32
+  },
+  __self: undefined
+}, "Links"), __jsx("a", {
+  style: {
+    textDecoration: "underline"
+  },
+  href: "https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
+  },
+  __self: undefined
+}, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin"), __jsx("div", {
+  style: {
+    height: "40px"
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34
+  },
+  __self: undefined
+}), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36
+  },
+  __self: undefined
+})), __jsx(Footer, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 39
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40
+  },
+  __self: undefined
+}, __jsx("img", {
+  src: "/static/interstate.svg",
+  width: "128",
+  height: "128",
+  alt: "Interstate Network",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41
+  },
+  __self: undefined
+})), __jsx("ul", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 43
+  },
+  __self: undefined
+}, __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "mailto://hello@interstate.network",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 45
+  },
+  __self: undefined
+}, "Email")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 47
+  },
+  __self: undefined
+}), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 48
+  },
+  __self: undefined
+}))), __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 52
+  },
+  __self: undefined
 }));
 
-/* harmony default export */ __webpack_exports__["default"] = (index);
+/* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_7___default()("UA-149335263-1", next_router__WEBPACK_IMPORTED_MODULE_6___default.a)(index));
+const Header = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1`
+font-size: 30px;
+line-height: 1.2;
+`;
+const Content = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+max-width: 832px;
+min-width: 0;
+width: 100%;
+box-sizing: border-box;
+overflow-wrap: break-word;
+line-height: 2;
 
-/***/ }),
+h1 {
+    font-size: 30px;
+}
 
-/***/ "./pages/utils/analytics.js":
-/*!**********************************!*\
-  !*** ./pages/utils/analytics.js ***!
-  \**********************************/
-/*! exports provided: initGA, logPageView, logEvent, logException */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+h2 {
+    font-size: 35px;
+}
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initGA", function() { return initGA; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logPageView", function() { return logPageView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logEvent", function() { return logEvent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logException", function() { return logException; });
-/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ "react-ga");
-/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_0__);
-// utils/analytics.js
+p {
+    margin-left: 10px;
+}
+a {
+    margin-left: 10px;
+}
+`;
+const Footer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer`
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+max-width: 800px;
+overflow-wrap: break-word;
+text-align: center;
+display: block;
 
-const initGA = () => {
-  console.log('GA init');
-  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.initialize('UA-149335263-1');
-};
-const logPageView = () => {
-  console.log(`Logging pageview for ${window.location.pathname}`);
-  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.set({
-    page: window.location.pathname
-  });
-  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.pageview(window.location.pathname);
-};
-const logEvent = (category = '', action = '') => {
-  if (category && action) {
-    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.event({
-      category,
-      action
-    });
-  }
-};
-const logException = (description = '', fatal = false) => {
-  if (description) {
-    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.exception({
-      description,
-      fatal
-    });
-  }
-};
+img {
+    width: 128px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+`;
 
 /***/ }),
 
@@ -550,6 +690,28 @@ module.exports = __webpack_require__(/*! /Users/hyungsukkang/website/pages/index
 
 /***/ }),
 
+/***/ "next-ga":
+/*!**************************!*\
+  !*** external "next-ga" ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next-ga");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -561,17 +723,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-ga":
-/*!***************************!*\
-  !*** external "react-ga" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-ga");
-
-/***/ }),
-
 /***/ "react-mailchimp-subscribe":
 /*!********************************************!*\
   !*** external "react-mailchimp-subscribe" ***!
@@ -580,6 +731,17 @@ module.exports = require("react-ga");
 /***/ (function(module, exports) {
 
 module.exports = require("react-mailchimp-subscribe");
+
+/***/ }),
+
+/***/ "react-particles-js":
+/*!*************************************!*\
+  !*** external "react-particles-js" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-particles-js");
 
 /***/ }),
 

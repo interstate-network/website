@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default class Layout extends React.Component {
   render () {
     return (
-            <Navbar className="flex items-center justify-between flex-wrap p-0 h-20">
+            <Navbar className="flex items-center justify-between content-center flex-wrap p-0 h-20">
             <div className="flex items-center align-middle flex-shrink-0 text-white mr-6">
             <img src="/static/logo.svg" width="108" height="108"/>
                 <span className="font-semibold text-xl tracking-tight">Interstate Network</span>
@@ -16,7 +16,8 @@ export default class Layout extends React.Component {
 }
 
 
-const Navbar = styled.nav`
+const Navbar = styled.div`
     background-color: #041D2D !important;
     color: #fff;
+    position: relative;
 `

@@ -24,10 +24,12 @@
     "@zeit/next-css": "^1.0.1",
     "install": "^0.13.0",
     "next": "9.0.5",
+    "next-ga": "^2.3.4",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-ga": "^2.6.0",
     "react-mailchimp-subscribe": "^2.1.0",
+    "react-particles-js": "^2.7.0",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {

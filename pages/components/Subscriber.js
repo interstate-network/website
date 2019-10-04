@@ -27,34 +27,23 @@ const CustomForm = ({ status, message, onValidated }) => {
     return (
       <div
         style={{
-          background: "#efefef",
-          borderRadius: 2,
+          background: "#808080",
+          marginLeft: "10%",
+          borderRadius: 10,
+          width: "80%",
           padding: 10,
-          display: "inline-block"
+          display: "inline-block",
+          textAlign: "center"
         }}
       >
-        {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-        {status === "error" && (
-          <div
-            style={{ color: "red" }}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        {status === "success" && (
-          <div
-            style={{ color: "green" }}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        <br />
+        <h3 style={{color: "#fff"}}>Get InterstateOne alpha testnet updates</h3>
         <input
-          style={{ fontSize: "2em", padding: 5 }}
+          style={{ width: "70%", fontSize: "12px", padding: 5 }}
           ref={node => (email = node)}
           type="email"
           placeholder="Your email"
         />
-        <br />
-        <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+        <button style={{ padding: 5, color: "#fff", width: "56px", backgroundColor: "#041D2D", fontSize: "14px", padding: 5 }} onClick={submit}>
           Submit
         </button>
       </div>

@@ -4373,6 +4373,13 @@ video {
   z-index: auto;
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -19348,6 +19355,5 @@ video {
     z-index: auto;
   }
 }
-
 
 /*# sourceMappingURL=styles.chunk.css.map*/
