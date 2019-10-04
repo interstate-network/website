@@ -381,14 +381,15 @@ const CustomForm = ({
     __self: undefined
   }, __jsx("h3", {
     style: {
-      color: "#fff"
+      color: "#fff",
+      fontSize: "16px"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: undefined
-  }, "Get InterstateOne alpha testnet updates"), __jsx("input", {
+  }, "Get InterstateOne testnet updates"), __jsx("input", {
     style: {
       width: "70%",
       fontSize: "12px",
@@ -496,72 +497,96 @@ const index = () => __jsx("div", {
     lineNumber: 27
   },
   __self: undefined
-}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("h2", {
+}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 28
   },
   __self: undefined
-}, "Developer Friendly."), __jsx("p", {
+}), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 29
   },
   __self: undefined
-}, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("h2", {
+}, "Developer Friendly."), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 30
   },
   __self: undefined
-}, "Fully Verifiable."), __jsx("p", {
+}, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 31
   },
   __self: undefined
-}, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("h1", {
+}), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 32
   },
   __self: undefined
-}, "Links"), __jsx("a", {
+}, "Fully Verifiable."), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
+  },
+  __self: undefined
+}, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34
+  },
+  __self: undefined
+}), __jsx("h2", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35
+  },
+  __self: undefined
+}, "Links"), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36
+  },
+  __self: undefined
+}, __jsx("a", {
   style: {
     textDecoration: "underline"
   },
   href: "https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 37
   },
   __self: undefined
-}, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin"), __jsx("div", {
+}, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin")), __jsx("div", {
   style: {
     height: "40px"
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 39
   },
   __self: undefined
 }), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36
+    lineNumber: 41
   },
   __self: undefined
 })), __jsx(Footer, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 44
   },
   __self: undefined
 }, __jsx("a", {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 45
   },
   __self: undefined
 }, __jsx("img", {
@@ -571,51 +596,51 @@ const index = () => __jsx("div", {
   alt: "Interstate Network",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41
+    lineNumber: 46
   },
   __self: undefined
 })), __jsx("ul", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 48
   },
   __self: undefined
 }, __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44
+    lineNumber: 49
   },
   __self: undefined
 }, __jsx("a", {
   href: "mailto://hello@interstate.network",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 50
   },
   __self: undefined
 }, "Email")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47
+    lineNumber: 52
   },
   __self: undefined
 }), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48
+    lineNumber: 53
   },
   __self: undefined
 }))), __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 57
   },
   __self: undefined
 }));
 
 /* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_7___default()("UA-149335263-1", next_router__WEBPACK_IMPORTED_MODULE_6___default.a)(index));
 const Header = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1`
-font-size: 30px;
+font-size: 40px;
 line-height: 1.2;
 `;
 const Content = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
@@ -630,19 +655,13 @@ box-sizing: border-box;
 overflow-wrap: break-word;
 line-height: 2;
 
-h1 {
+
+h2 {
     font-size: 30px;
 }
 
-h2 {
-    font-size: 35px;
-}
-
 p {
-    margin-left: 10px;
-}
-a {
-    margin-left: 10px;
+    padding: 0 10px;
 }
 `;
 const Footer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer`

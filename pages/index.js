@@ -25,12 +25,17 @@ const index = () => (
         <Particle/>
         <Content>
             <Header>Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security.</Header>
+            <br></br>
             <h2>Developer Friendly.</h2>
             <p>No SDK required. Write your code in Solidity as if you're deploying to mainnet.</p>
+            <br></br>
             <h2>Fully Verifiable.</h2>
             <p>State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine.</p>
-            <h1>Links</h1>
-            <a style={{textDecoration: "underline"}}href="https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html">The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin</a>
+            <br></br>
+            <h2>Links</h2>
+            <p>
+            <a style={{textDecoration: "underline"}} href="https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html">The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin</a>
+            </p>
             <div style={{height: "40px"}}></div>
 
             <Subscriber/>
@@ -57,7 +62,7 @@ export default withGA("UA-149335263-1", Router)(index);
 
 
 const Header = styled.h1`
-font-size: 30px;
+font-size: 40px;
 line-height: 1.2;
 `
 
@@ -74,19 +79,13 @@ box-sizing: border-box;
 overflow-wrap: break-word;
 line-height: 2;
 
-h1 {
+
+h2 {
     font-size: 30px;
 }
 
-h2 {
-    font-size: 35px;
-}
-
 p {
-    margin-left: 10px;
-}
-a {
-    margin-left: 10px;
+    padding: 0 10px;
 }
 `
 

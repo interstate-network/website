@@ -36,7 +36,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           textAlign: "center"
         }}
       >
-        <h3 style={{color: "#fff"}}>Get InterstateOne alpha testnet updates</h3>
+        <h3 style={{color: "#fff", fontSize: "16px"}}>Get InterstateOne testnet updates</h3>
         <input
           style={{ width: "70%", fontSize: "12px", padding: 5 }}
           ref={node => (email = node)}
