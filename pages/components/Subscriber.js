@@ -38,7 +38,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           textAlign: "center",
         }}
       >
-        <h3 style={{color: "#fff", fontSize: "16px"}}>{status === "sending" && "sending.." || status === "error" && message || status === "success" && message || sub}</h3>
+        <h3 style={{color: "#fff", fontSize: "16px"}}>{status === "sending" && "Sending..." || status === "error" && message || status === "success" && message || sub}</h3>
         <input
           style={{ width: "70%", fontSize: "12px", padding: 5 }}
           ref={node => (email = node)}
