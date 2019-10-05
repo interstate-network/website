@@ -596,7 +596,7 @@ const index = () => __jsx("div", {
   },
   __self: undefined
 }, __jsx("a", {
-  href: "/",
+  href: "mailto://hello@interstate.network",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 50

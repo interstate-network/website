@@ -17688,7 +17688,7 @@ var index = function index() {
     },
     __self: this
   }, __jsx("a", {
-    href: "/",
+    href: "mailto://hello@interstate.network",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50

@@ -47,7 +47,7 @@ const index = () => (
 
         </Content>
         <Footer>
-            <a href="/">
+            <a href="mailto://hello@interstate.network">
                 <img src="/static/interstate.svg" width="128" height="128" alt="Interstate Network"/>
             </a>  
             <ul>
