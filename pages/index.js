@@ -5,6 +5,8 @@ import '../styles/main.css'
 import Particle from './components/Particle'
 import Router from "next/router"
 import withGA from "next-ga"
+import Head from "next/head"
+import MediaQuery from 'react-responsive'
 
 const particlesOptions = {
     particles: {
@@ -21,8 +23,11 @@ const particlesOptions = {
 
 const index = () => (
     <div>
+        <MediaQuery query="(min-device-width: 1025px)">
+            <Particle/>
+        </MediaQuery>
+        
         <Navbar/>
-        <Particle/>
         <Content>
             <Header>Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security.</Header>
             <br></br>
@@ -53,8 +58,6 @@ const index = () => (
                 <li></li>
             </ul>  
         </Footer> 
-
-        <Particle/>
     </div>
 )
 

@@ -16,7 +16,7 @@ export default () => (
       params={{
         particles: {
           number: {
-            value: 100,
+            value: 200,
             density: {
               enable: true,
               value_area: 1803.4120608655228

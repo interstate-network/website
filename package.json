@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +32,7 @@
     "react-ga": "^2.6.0",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-particles-js": "^2.7.0",
+    "react-responsive": "^8.0.1",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
