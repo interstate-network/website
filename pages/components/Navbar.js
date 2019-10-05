@@ -19,5 +19,5 @@ export default class Layout extends React.Component {
 const Navbar = styled.div`
     background-color: #041D2D !important;
     color: #fff;
-    position: relative;
+    z-index: 1;
 `

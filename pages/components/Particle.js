@@ -1,25 +1,26 @@
 import React from "react";
 import Particles from "react-particles-js";
+import styled from 'styled-components';
 
 export default () => (
-  <div
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      zIndex: -1
-    }}
-  >
+  <ParticlesContainer>
     <Particles
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: -1
+      }}
+      className="particle"
       params={{
         particles: {
           number: {
             value: 200,
             density: {
               enable: true,
-              value_area: 1803.4120608655228
+              value_area: 1800
             }
           },
           color: {
@@ -124,5 +125,12 @@ export default () => (
         retina_detect: true
       }}
     />
-  </div>
+  </ParticlesContainer>
 );
+
+const ParticlesContainer = styled.div`
+@media screen and (orientation: portrait) {
+    .particle {
+        display: hidden;
+    }
+`

@@ -33,7 +33,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           width: "80%",
           padding: 10,
           display: "inline-block",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         <h3 style={{color: "#fff", fontSize: "16px"}}>Get InterstateOne testnet updates</h3>

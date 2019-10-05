@@ -150,7 +150,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 const Navbar = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     background-color: #041D2D !important;
     color: #fff;
-    position: relative;
+    z-index: 1;
 `;
 
 /***/ }),
@@ -168,32 +168,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ "react-particles-js");
 /* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/hyungsukkang/website/pages/components/Particle.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-/* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
+
+/* harmony default export */ __webpack_exports__["default"] = (() => __jsx(ParticlesContainer, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {
   style: {
-    position: "absolute",
+    position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
     height: "100%",
     zIndex: -1
   },
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  className: "particle",
   params: {
     particles: {
       number: {
         value: 200,
         density: {
           enable: true,
-          value_area: 1803.4120608655228
+          value_area: 1800
         }
       },
       color: {
@@ -299,10 +303,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 7
   },
   __self: undefined
 })));
+const ParticlesContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
+@media screen and (orientation: portrait) {
+    .particle {
+        display: hidden;
+    }
+`;
 
 /***/ }),
 
@@ -473,44 +483,49 @@ const particlesOptions = {
   }
 };
 
-const index = () => __jsx("div", {
+const index = () => __jsx(Container, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 25
   },
   __self: undefined
-}, __jsx(react_responsive__WEBPACK_IMPORTED_MODULE_9___default.a, {
-  query: "(min-device-width: 1025px)",
+}, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 26
   },
   __self: undefined
-}, __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_5__["default"], {
+}), __jsx(Content, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 27
   },
   __self: undefined
-})), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+}, __jsx(Header, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 29
   },
   __self: undefined
-}), __jsx(Content, {
+}), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 30
   },
   __self: undefined
-}, __jsx(Header, {
+}, "Developer Friendly."), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 31
   },
   __self: undefined
-}, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
+}, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 32
@@ -522,13 +537,13 @@ const index = () => __jsx("div", {
     lineNumber: 33
   },
   __self: undefined
-}, "Developer Friendly."), __jsx("p", {
+}, "Fully Verifiable."), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 34
   },
   __self: undefined
-}, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
+}, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 35
@@ -540,28 +555,10 @@ const index = () => __jsx("div", {
     lineNumber: 36
   },
   __self: undefined
-}, "Fully Verifiable."), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37
-  },
-  __self: undefined
-}, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 38
-  },
-  __self: undefined
-}), __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 39
-  },
-  __self: undefined
 }, "Links"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 37
   },
   __self: undefined
 }, __jsx("a", {
@@ -571,7 +568,7 @@ const index = () => __jsx("div", {
   href: "https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41
+    lineNumber: 38
   },
   __self: undefined
 }, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin")), __jsx("div", {
@@ -580,26 +577,26 @@ const index = () => __jsx("div", {
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 40
   },
   __self: undefined
 }), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 42
   },
   __self: undefined
 })), __jsx(Footer, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48
+    lineNumber: 44
   },
   __self: undefined
 }, __jsx("a", {
   href: "mailto://hello@interstate.network",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49
+    lineNumber: 45
   },
   __self: undefined
 }, __jsx("img", {
@@ -609,46 +606,58 @@ const index = () => __jsx("div", {
   alt: "Interstate Network",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50
+    lineNumber: 46
   },
   __self: undefined
 })), __jsx("ul", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 48
   },
   __self: undefined
 }, __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 53
+    lineNumber: 49
   },
   __self: undefined
 }, __jsx("a", {
   href: "mailto://hello@interstate.network",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54
+    lineNumber: 50
   },
   __self: undefined
 }, "Email")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 56
+    lineNumber: 52
   },
   __self: undefined
 }), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
+    lineNumber: 53
+  },
+  __self: undefined
+}))), __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  className: "particles",
+  __source: {
+    fileName: _jsxFileName,
     lineNumber: 57
   },
   __self: undefined
-}))));
+}));
 
 /* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_7___default()("UA-149335263-1", next_router__WEBPACK_IMPORTED_MODULE_6___default.a)(index));
 const Header = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1`
 font-size: 40px;
 line-height: 1.2;
+`;
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+.particles {
+    display: none;
+}
 `;
 const Content = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
 margin-top: 20px;

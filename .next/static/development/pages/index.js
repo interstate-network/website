@@ -17111,7 +17111,7 @@ var _jsxFileName = "/Users/hyungsukkang/website/pages/components/Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: #041D2D !important;\n    color: #fff;\n    position: relative;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: #041D2D !important;\n    color: #fff;\n    z-index: 1;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -17188,37 +17188,53 @@ var Navbar = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_temp
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ "./node_modules/react-particles-js/lib/particles.js");
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-particles-js */ "./node_modules/react-particles-js/lib/particles.js");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
 var _jsxFileName = "/Users/hyungsukkang/website/pages/components/Particle.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n@media screen and (orientation: portrait) {\n    .particle {\n        display: hidden;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx("div", {
+  return __jsx(ParticlesContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
     style: {
-      position: "absolute",
+      position: "fixed",
       top: 0,
       left: 0,
       width: "100%",
       height: "100%",
       zIndex: -1
     },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    className: "particle",
     params: {
       particles: {
         number: {
           value: 200,
           density: {
             enable: true,
-            value_area: 1803.4120608655228
+            value_area: 1800
           }
         },
         color: {
@@ -17324,11 +17340,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 7
     },
     __self: this
   }));
 });
+var ParticlesContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
 
 /***/ }),
 
@@ -17513,8 +17530,18 @@ var _jsxFileName = "/Users/hyungsukkang/website/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject3() {
+function _templateObject4() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-top: auto;\nmargin-left: auto;\nmargin-right: auto;\npadding: 1em;\nmax-width: 800px;\noverflow-wrap: break-word;\ntext-align: center;\ndisplay: block;\n\nimg {\n    width: 128px;\n    height: auto;\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-top: 20px;\nmargin-left: auto;\nmargin-right: auto;\npadding: 1em;\nmax-width: 832px;\nmin-width: 0;\nwidth: 100%;\nbox-sizing: border-box;\noverflow-wrap: break-word;\nline-height: 2;\n\n\nh2 {\n    font-size: 30px;\n}\n\np {\n    padding: 0 10px;\n}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -17524,7 +17551,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-top: 20px;\nmargin-left: auto;\nmargin-right: auto;\npadding: 1em;\nmax-width: 832px;\nmin-width: 0;\nwidth: 100%;\nbox-sizing: border-box;\noverflow-wrap: break-word;\nline-height: 2;\n\n\nh2 {\n    font-size: 30px;\n}\n\np {\n    padding: 0 10px;\n}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.particles {\n    display: none;\n}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -17565,44 +17592,49 @@ var particlesOptions = {
 };
 
 var index = function index() {
-  return __jsx("div", {
+  return __jsx(Container, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, __jsx(react_responsive__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    query: "(min-device-width: 1025px)",
+  }, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(Content, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  })), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(Header, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }), __jsx(Content, {
+  }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, __jsx(Header, {
+  }, "Developer Friendly."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
-  }, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
+  }, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
@@ -17614,13 +17646,13 @@ var index = function index() {
       lineNumber: 33
     },
     __self: this
-  }, "Developer Friendly."), __jsx("p", {
+  }, "Fully Verifiable."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
+  }, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
@@ -17632,28 +17664,10 @@ var index = function index() {
       lineNumber: 36
     },
     __self: this
-  }, "Fully Verifiable."), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
   }, "Links"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 37
     },
     __self: this
   }, __jsx("a", {
@@ -17663,7 +17677,7 @@ var index = function index() {
     href: "https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: this
   }, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin")), __jsx("div", {
@@ -17672,26 +17686,26 @@ var index = function index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 40
     },
     __self: this
   }), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 42
     },
     __self: this
   })), __jsx(Footer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 44
     },
     __self: this
   }, __jsx("a", {
     href: "mailto://hello@interstate.network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 45
     },
     __self: this
   }, __jsx("img", {
@@ -17701,47 +17715,55 @@ var index = function index() {
     alt: "Interstate Network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 46
     },
     __self: this
   })), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 48
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 49
     },
     __self: this
   }, __jsx("a", {
     href: "mailto://hello@interstate.network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 50
     },
     __self: this
   }, "Email")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 52
     },
     __self: this
   }), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }))), __jsx(_components_Particle__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "particles",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }))));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_8___default()("UA-149335263-1", next_router__WEBPACK_IMPORTED_MODULE_7___default.a)(index));
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject());
-var Content = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
-var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].footer(_templateObject3());
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].footer(_templateObject4());
 
 /***/ }),
 

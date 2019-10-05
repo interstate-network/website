@@ -22,10 +22,7 @@ const particlesOptions = {
 
 
 const index = () => (
-    <div>
-        <MediaQuery query="(min-device-width: 1025px)">
-            <Particle/>
-        </MediaQuery>
+    <Container>
         <Navbar/>
         <Content>
             <Header>Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security.</Header>
@@ -43,7 +40,6 @@ const index = () => (
             <div style={{height: "40px"}}></div>
 
             <Subscriber/>
-
         </Content>
         <Footer>
             <a href="mailto://hello@interstate.network">
@@ -57,7 +53,10 @@ const index = () => (
                 <li></li>
             </ul>  
         </Footer> 
-    </div>
+
+        <Particle className="particles"/>
+        
+    </Container>
 )
 
 export default withGA("UA-149335263-1", Router)(index);
@@ -66,6 +65,12 @@ export default withGA("UA-149335263-1", Router)(index);
 const Header = styled.h1`
 font-size: 40px;
 line-height: 1.2;
+`
+
+const Container = styled.div`
+.particles {
+    display: none;
+}
 `
 
 
