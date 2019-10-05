@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 const url = "//gmail.us20.list-manage.com/subscribe/post?u=eb8b68104b2215ffa0b951220&amp;id=2deae4b1fb"
 
@@ -23,6 +23,8 @@ const CustomForm = ({ status, message, onValidated }) => {
       onValidated({
         EMAIL: email.value,
       });
+
+    const sub= "Get InterstateOne testnet updates";
   
     return (
       <div
@@ -36,7 +38,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           textAlign: "center",
         }}
       >
-        <h3 style={{color: "#fff", fontSize: "16px"}}>Get InterstateOne testnet updates</h3>
+        <h3 style={{color: "#fff", fontSize: "16px"}}>{status === "sending" && "sending.." || status === "error" && message || status === "success" && message || sub}</h3>
         <input
           style={{ width: "70%", fontSize: "12px", padding: 5 }}
           ref={node => (email = node)}

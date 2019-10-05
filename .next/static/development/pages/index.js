@@ -17439,6 +17439,7 @@ var CustomForm = function CustomForm(_ref2) {
     });
   };
 
+  var sub = "Get InterstateOne testnet updates";
   return __jsx("div", {
     style: {
       background: "#808080",
@@ -17451,7 +17452,7 @@ var CustomForm = function CustomForm(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   }, __jsx("h3", {
@@ -17461,10 +17462,10 @@ var CustomForm = function CustomForm(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 41
     },
     __self: this
-  }, "Get InterstateOne testnet updates"), __jsx("input", {
+  }, status === "sending" && "sending.." || status === "error" && message || status === "success" && message || sub), __jsx("input", {
     style: {
       width: "70%",
       fontSize: "12px",
@@ -17477,7 +17478,7 @@ var CustomForm = function CustomForm(_ref2) {
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 42
     },
     __self: this
   }), __jsx("button", {
@@ -17491,7 +17492,7 @@ var CustomForm = function CustomForm(_ref2) {
     onClick: submit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: this
   }, "Submit"));

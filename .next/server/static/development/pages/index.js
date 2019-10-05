@@ -374,6 +374,7 @@ const CustomForm = ({
     EMAIL: email.value
   });
 
+  const sub = "Get InterstateOne testnet updates";
   return __jsx("div", {
     style: {
       background: "#808080",
@@ -386,7 +387,7 @@ const CustomForm = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx("h3", {
@@ -396,10 +397,10 @@ const CustomForm = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 41
     },
     __self: undefined
-  }, "Get InterstateOne testnet updates"), __jsx("input", {
+  }, status === "sending" && "sending.." || status === "error" && message || status === "success" && message || sub), __jsx("input", {
     style: {
       width: "70%",
       fontSize: "12px",
@@ -410,7 +411,7 @@ const CustomForm = ({
     placeholder: "Your email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 42
     },
     __self: undefined
   }), __jsx("button", {
@@ -425,7 +426,7 @@ const CustomForm = ({
     onClick: submit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: undefined
   }, "Submit"));
