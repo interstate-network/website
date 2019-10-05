@@ -17587,73 +17587,73 @@ var index = function index() {
   })), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }), __jsx(Content, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }, __jsx(Header, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, "Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, "Developer Friendly."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, "No SDK required. Write your code in Solidity as if you're deploying to mainnet."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: this
   }, "Fully Verifiable."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, "State-transitions and token transfers are verifiable on mainnet through our generalized fraud proof engine."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, "Links"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: this
   }, __jsx("a", {
@@ -17663,7 +17663,7 @@ var index = function index() {
     href: "https://vitalik.ca/general/2019/08/28/hybrid_layer_2.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, "The dawn of Hybrid Layer 2 Protocols by Vitalik Buterin")), __jsx("div", {
@@ -17672,26 +17672,26 @@ var index = function index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   }), __jsx(_components_Subscriber__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   })), __jsx(Footer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   }, __jsx("a", {
     href: "mailto://hello@interstate.network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }, __jsx("img", {
@@ -17701,38 +17701,38 @@ var index = function index() {
     alt: "Interstate Network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   })), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   }, __jsx("a", {
     href: "mailto://hello@interstate.network",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     },
     __self: this
   }, "Email")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 56
     },
     __self: this
   }), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: this
   }))));

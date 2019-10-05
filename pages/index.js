@@ -26,7 +26,6 @@ const index = () => (
         <MediaQuery query="(min-device-width: 1025px)">
             <Particle/>
         </MediaQuery>
-        
         <Navbar/>
         <Content>
             <Header>Interstate Network is a hybrid layer2 proof-of-stake sidechain designed to scale Ethereum without compromising on security.</Header>
