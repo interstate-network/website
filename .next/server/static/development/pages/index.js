@@ -400,7 +400,7 @@ const CustomForm = ({
       lineNumber: 41
     },
     __self: undefined
-  }, status === "sending" && "sending.." || status === "error" && message || status === "success" && message || sub), __jsx("input", {
+  }, status === "sending" && "Sending..." || status === "error" && "This email is already registered to list Interstate Network" || status === "success" && message || sub), __jsx("input", {
     style: {
       width: "70%",
       fontSize: "12px",

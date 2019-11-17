@@ -1,0 +1,385 @@
+:root {
+    --color-primary: rgb(4, 29, 45);
+    --color-secondary: #ee234a;
+    --color-bg: #282c34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inconsolata', monospace;
+    background-color: #ededed;
+    color: var(--color-bg);
+    font-size: 105%;
+}
+
+header, section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 70vh;
+        /*
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); */
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 1rem 3.3rem;
+}
+
+section.team {
+    background-color: var(--color-secondary);
+}
+
+nav.nav {
+    background-color: #fff;
+    color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0 6.5rem;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.white {
+    color: #fff;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.highlight {
+    color: var(--color-secondary);
+}
+
+a {
+    line-height: 2rem;
+    color: #eee;
+}
+
+p:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+}
+
+input, button {
+    padding: .5rem;
+    border-radius: .3rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 1rem;
+    font-family: inherit;
+}
+
+input[type="email"] {
+    width: 22rem;
+}
+
+input[type="submit"] {
+    width: 10rem;
+    background-color: var(--color-secondary);
+    border: 2px solid transparent;
+}
+
+.nav__img {
+    filter: none; /* invert(1) saturate(0) brightness(1) sepia(1); */
+    height: 80px;
+    transform: scale(1.7);
+}
+
+.nav__anchor {
+    color: var(--color-secondary);
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 3rem;
+}
+
+.twosides {
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    padding: 3rem 0;
+}
+
+.text-container {
+    width: 70%;
+    margin: 3rem 0;
+}
+
+.sest {
+    width: 60%;
+    align-self: start;
+}
+
+.sto {
+    width: 100%;
+}
+
+.middle-box {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-image: linear-gradient(120deg, #fff 60%, #fff 65%, transparent 70%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    column-gap: 8rem;
+
+    font-size: 1.2rem;
+}
+
+.features__grid > div > h2 {
+    font-size: 1.3rem;
+}
+
+.features > .container {
+    margin: 2rem 0;
+}
+
+.textcenter {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team__member {
+    background-color: transparent;
+    border-radius: .4rem;
+    width: 30%;
+    height: max-content;
+    border: 1px solid transparent;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+    margin: 1rem 2rem;
+    color: #fff;
+    /* box-shadow: 1rem 2rem 2rem #00000020;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: all .3s;
+}
+
+.team__member:first-child {
+    margin-left: 0;
+}
+
+.team__member:last-child {
+    margin-right: 0;
+}
+
+.team__member h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+.team__member__pfp {
+    height: 12rem;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    background-color: var(--color-bg);
+    color: #fff;
+    padding: 0;
+    position: relative;
+    height: 30rem;
+}
+
+.footer__filter {
+    background-image: linear-gradient(120deg, var(--color-bg) 60%, var(--color-bg) 65%, transparent 70%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.footer > .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.margin-bottom {
+    margin-bottom: 3rem;
+}
+  
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#particles-footer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .team-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .team__member {
+        width: 60%;
+    }
+
+    .team__member:hover {
+        margin-top: 3rem;
+    }
+
+    .team__member:first-child, .team__member:last-child {
+        margin: 1rem 2rem;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    nav.nav {
+        padding: 0 1rem;
+    }
+
+    .sest {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .features__grid {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .middle-box {
+        background-image: linear-gradient(170deg, #fff 60%, #fff 65%, transparent 70%); 
+    }
+
+    .nav__img {
+        height: 65px;
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .team-wrapper {
+        align-items: center;
+    }
+
+    .team__member {
+        width: 70%;
+    }
+
+    nav.nav {
+        padding: .2rem;
+    }
+    .sest {
+        width: 100%;
+    }
+
+    .footer {
+        height: 35rem;
+    }
+
+    input[type="email"] {
+        width: 15rem;
+    }
+}
