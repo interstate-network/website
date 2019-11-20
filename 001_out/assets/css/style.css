@@ -9,9 +9,8 @@
 }
 
 html {
-    font-family: "Roboto", sans-serif;
-    background-color: #eef;
-    color: var(--color-primary);
+    font-family: 'Source Code Pro', monospace;
+    color: #282c34;
 }
 
 header, section {
@@ -26,7 +25,6 @@ header {
     background-color: #fff;
     overflow: hidden;
     height: 60vh;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); */
 }
 
 main {
@@ -42,8 +40,7 @@ section.team {
 }
 
 nav {
-    background-color: var(--color-primary);
-    color: #fff;
+    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -83,7 +80,6 @@ input, button {
 }
 
 .nav__img {
-    filter: invert(1) saturate(0) brightness(1) sepia(1);
     height: 75px;
     transform: scale(1.5);
 }
